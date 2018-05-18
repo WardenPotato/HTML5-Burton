@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <style>
+        *{
+            font-family: "Roboto", "sans-serif";
+            box-sizing: border-box;
+        }
+        div.form-group{
+            width: 500px;
+            padding: 20px;
+        }
+        .form-group input, select, textarea{
+            float: right;
+            width: 300px;
+        }
+        form{
+            width: 1000px;
+            height: 500px;
+        }
+        #left, #right{
+            float: left;
+            width: 500px;
+            height: 450px;
+            margin: 0;
+        }
+        #bottom{
+            float: left;
+            padding: 0;
+            height: 50px;
+            width: 1000px;
+        }
+        .check{
+            margin-left: 200px;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <div id="left">
+        <div class="form-group">
+            <label for="voornaam">Voornaam</label>
+            <input type="text" id="voornaam" name="voornaam" required>
+        </div>
+        <div class="form-group">
+            <label for="tussenvoegsel">Tussenvoegsel</label>
+            <input type="text" id="tussenvoegsel" name="tussenvoegsel">
+        </div>
+        <div class="form-group">
+            <label for="achternaam">Achternaam</label>
+            <input type="text" id="achternaam" name="achternaam" required>
+        </div>
+        <div style="width: 500px; padding: 20px;" class="form-group2">
+            <label style="margin-right: 95px" for="geslacht">Geslacht</label>
+            <input type="radio" value="man" name="geslacht"> man
+            <input type="radio" value="vrouw" > vrouw
+        </div>
+        <div class="form-group">
+            <label for="ogen">Kleur ogen</label>
+            <select id="ogen" name="ogen">
+                <option value="Groen">Groen</option>
+                <option value="Blauw">Blauw</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="datum">Geboortedatum</label>
+            <input type="date" id="datum" name="datum" required>
+        </div>
+        <div class="form-group">
+            <label for="desc">Omschrijving</label>
+            <textarea id="desc" name="desc" required></textarea>
+        </div>
+    </div>
+    <div id="right">
+        <div  style="width: 500px; padding: 20px;" class="form-group2">
+            <label for="eten">Lekker eten</label> <br>
+            <input type="checkbox" class="check" value="Bonen" name="eten" checked> test <br>
+            <input type="checkbox" class="check" value="Aardappel" name="eten"> 3 <br>
+            <input type="checkbox" class="check" value="Hamburger" name="eten"> 5
+        </div>
+    </div>
+    <div id="bottom">
+            <button style="float: right" value="annuleer" onclick="location.href='index.html';">Annuleer</button>
+            <input style="float: right" type="submit" value="ok" name="submit">
+    </div>
+</form>
+</body>
+</html>
